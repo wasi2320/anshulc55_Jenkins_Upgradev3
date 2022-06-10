@@ -11,7 +11,12 @@ pipeline{
                         echo "The build is done successfully"
                   }
             }
-            stage("Depolyment"){
+            stage("Depolyment on stage"){
+                  steps{
+                        echo "The hg project is deployed successfully"
+                  }
+            }
+            stage("Depolyment on prouction"){
                   steps{
                         echo "The hg project is deployed successfully"
                   }
