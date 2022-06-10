@@ -1,26 +1,21 @@
-pipeline {
+pipeline{
       agent any
-      stages {
-            stage('Init') {
-                  steps {
-                        echo 'Hi, this is Anshul from LevelUp360'
-                        echo 'We are Starting the Testing'
+      stages{
+            stage('init'){
+                  steps{
+                  echo 'Hi i am wasif from evops training'
+            }
+            }
+            stage('Build'){
+                  steps{
+                        echo "The build is done successfully"
                   }
             }
-            stage('Build') {
-                  steps {
-                        echo 'Building Sample Maven Project'
+            stage("Depolyment"){
+                  steps{
+                        echo "The hg project is deployed successfully"
                   }
             }
-            stage('Deploy') {
-                  steps {
-                        echo "Deploying in Staging Area"
-                  }
-            }
-            stage('Deploy Production') {
-                  steps {
-                        echo "Deploying in Production Area"
-                  }
-            }
+
       }
 }
