@@ -12,15 +12,14 @@ pipeline {
                 }
             }
         }
-        stage('Deploy in Staging Environment'){
+       /*  stage('Deploy in Staging Environment'){
             steps{
                 
                 build job: 'Deploy_App_Staging'
-                copyArtifacts filter: '**/*.war', projectName: 'dev_in_staging_envirnment'
 
             }
             
-        }
+        } */
       /*   stage('Deploy to Production'){
             steps{
                 timeout(time:5, unit:'DAYS'){
