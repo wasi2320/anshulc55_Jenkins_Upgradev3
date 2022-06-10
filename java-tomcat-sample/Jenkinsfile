@@ -16,7 +16,7 @@ pipeline {
             steps{
                 
                 build job: 'Deploy_App_Staging'
-                copyArtifacts filter: '**/*.war', projectName: 'dev in staging envirnment'
+                copyArtifacts filter: '**/*.war', projectName: 'dev_in_staging_envirnment'
 
             }
             
