@@ -8,7 +8,7 @@ job("First-Maven-Project-Via-DSL_1")
         scm('* * * * *')
     }
     steps{
-        maven("clear package",'maven-samples/single-moule/pom.xml')
+        maven("clear package",'maven-samples/single-moule/pom.xml',master)
     }
     publishers{
         archiveArtifacts '**/*.jar'
